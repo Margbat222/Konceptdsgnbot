@@ -79,7 +79,7 @@ async def generate_task(message: types.Message):
         await message.answer("Ты использовал все 5 бесплатных заданий на сегодня.\nПриходи завтра или купи доп. задания!")
 
 # Запуск
-if name == "__main__":
+if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(init_db())
     from aiogram.utils import executor
